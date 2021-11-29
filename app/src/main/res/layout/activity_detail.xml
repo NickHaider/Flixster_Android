@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DetailActivity">
+    tools:context=".DetailActivity"
+    android:background="@drawable/detail_background">
 
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/player"
         android:layout_width="match_parent"
-        android:layout_height="250dp" />
+        android:layout_height="250dp"
+        />
 
     <TextView
         android:id="@+id/tvTitle"
@@ -18,7 +20,9 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         android:textSize="30sp"
-        tools:text="It: Chapter Two" />
+        android:textStyle="bold|italic"
+        tools:text="It: Chapter Two"
+        />
 
     <RatingBar
         android:id="@+id/ratingBar"
@@ -33,5 +37,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textSize="16sp"
         tools:text="Sample Text, here is some sample text just to show what the movie overview looks like. Random text, random text, random text. Random text, random text, random text." />
 </LinearLayout>
